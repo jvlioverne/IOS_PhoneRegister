@@ -10,7 +10,7 @@
 		8BFDDD501C0CB64800FD7720 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDDD4F1C0CB64800FD7720 /* main.m */; };
 		8BFDDD531C0CB64800FD7720 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDDD521C0CB64800FD7720 /* AppDelegate.m */; };
 		8BFDDD561C0CB64800FD7720 /* Phone_Register.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDDD541C0CB64800FD7720 /* Phone_Register.xcdatamodeld */; };
-		8BFDDD591C0CB64800FD7720 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDDD581C0CB64800FD7720 /* ViewController.m */; };
+		8BFDDD591C0CB64800FD7720 /* Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDDD581C0CB64800FD7720 /* Register.m */; };
 		8BFDDD5C1C0CB64800FD7720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFDDD5A1C0CB64800FD7720 /* Main.storyboard */; };
 		8BFDDD5E1C0CB64800FD7720 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFDDD5D1C0CB64800FD7720 /* Images.xcassets */; };
 		8BFDDD611C0CB64800FD7720 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BFDDD5F1C0CB64800FD7720 /* LaunchScreen.xib */; };
@@ -34,8 +34,8 @@
 		8BFDDD511C0CB64800FD7720 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BFDDD521C0CB64800FD7720 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8BFDDD551C0CB64800FD7720 /* Phone_Register.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phone_Register.xcdatamodel; sourceTree = "<group>"; };
-		8BFDDD571C0CB64800FD7720 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8BFDDD581C0CB64800FD7720 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8BFDDD571C0CB64800FD7720 /* Register.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Register.h; sourceTree = "<group>"; };
+		8BFDDD581C0CB64800FD7720 /* Register.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Register.m; sourceTree = "<group>"; };
 		8BFDDD5B1C0CB64800FD7720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BFDDD5D1C0CB64800FD7720 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BFDDD601C0CB64800FD7720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -62,6 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BC77C3D1C0CB85D0082309B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8BFDDD511C0CB64800FD7720 /* AppDelegate.h */,
+				8BFDDD521C0CB64800FD7720 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8BC77C3E1C0CB87E0082309B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8BFDDD571C0CB64800FD7720 /* Register.h */,
+				8BFDDD581C0CB64800FD7720 /* Register.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		8BFDDD411C0CB64700FD7720 = {
 			isa = PBXGroup;
 			children = (
@@ -83,10 +101,8 @@
 		8BFDDD4C1C0CB64800FD7720 /* Phone Register */ = {
 			isa = PBXGroup;
 			children = (
-				8BFDDD511C0CB64800FD7720 /* AppDelegate.h */,
-				8BFDDD521C0CB64800FD7720 /* AppDelegate.m */,
-				8BFDDD571C0CB64800FD7720 /* ViewController.h */,
-				8BFDDD581C0CB64800FD7720 /* ViewController.m */,
+				8BC77C3D1C0CB85D0082309B /* Main */,
+				8BC77C3E1C0CB87E0082309B /* User */,
 				8BFDDD5A1C0CB64800FD7720 /* Main.storyboard */,
 				8BFDDD5D1C0CB64800FD7720 /* Images.xcassets */,
 				8BFDDD5F1C0CB64800FD7720 /* LaunchScreen.xib */,
@@ -224,7 +240,7 @@
 			files = (
 				8BFDDD561C0CB64800FD7720 /* Phone_Register.xcdatamodeld in Sources */,
 				8BFDDD531C0CB64800FD7720 /* AppDelegate.m in Sources */,
-				8BFDDD591C0CB64800FD7720 /* ViewController.m in Sources */,
+				8BFDDD591C0CB64800FD7720 /* Register.m in Sources */,
 				8BFDDD501C0CB64800FD7720 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +434,7 @@
 				8BFDDD721C0CB64900FD7720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BFDDD731C0CB64900FD7720 /* Build configuration list for PBXNativeTarget "Phone RegisterTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +443,7 @@
 				8BFDDD751C0CB64900FD7720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
