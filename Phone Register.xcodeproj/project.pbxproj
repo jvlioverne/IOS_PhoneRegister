@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B28CB711C0CCD9C00D810A0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B28CB6D1C0CCD9B00D810A0 /* Fabric.framework */; };
+		8B28CB721C0CCD9C00D810A0 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B28CB6E1C0CCD9C00D810A0 /* DigitsKit.framework */; };
+		8B28CB731C0CCD9C00D810A0 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8B28CB6F1C0CCD9C00D810A0 /* DigitsKitResources.bundle */; };
+		8B28CB741C0CCD9C00D810A0 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B28CB701C0CCD9C00D810A0 /* TwitterCore.framework */; };
 		8BFDDD501C0CB64800FD7720 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDDD4F1C0CB64800FD7720 /* main.m */; };
 		8BFDDD531C0CB64800FD7720 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDDD521C0CB64800FD7720 /* AppDelegate.m */; };
 		8BFDDD561C0CB64800FD7720 /* Phone_Register.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDDD541C0CB64800FD7720 /* Phone_Register.xcdatamodeld */; };
@@ -28,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B28CB6D1C0CCD9B00D810A0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		8B28CB6E1C0CCD9C00D810A0 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		8B28CB6F1C0CCD9C00D810A0 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
+		8B28CB701C0CCD9C00D810A0 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		8BFDDD4A1C0CB64800FD7720 /* Phone Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phone Register.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFDDD4E1C0CB64800FD7720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BFDDD4F1C0CB64800FD7720 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B28CB711C0CCD9C00D810A0 /* Fabric.framework in Frameworks */,
+				8B28CB741C0CCD9C00D810A0 /* TwitterCore.framework in Frameworks */,
+				8B28CB721C0CCD9C00D810A0 /* DigitsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,10 @@
 		8BFDDD411C0CB64700FD7720 = {
 			isa = PBXGroup;
 			children = (
+				8B28CB6D1C0CCD9B00D810A0 /* Fabric.framework */,
+				8B28CB6E1C0CCD9C00D810A0 /* DigitsKit.framework */,
+				8B28CB6F1C0CCD9C00D810A0 /* DigitsKitResources.bundle */,
+				8B28CB701C0CCD9C00D810A0 /* TwitterCore.framework */,
 				8BFDDD4C1C0CB64800FD7720 /* Phone Register */,
 				8BFDDD691C0CB64900FD7720 /* Phone RegisterTests */,
 				8BFDDD4B1C0CB64800FD7720 /* Products */,
@@ -148,6 +163,7 @@
 				8BFDDD461C0CB64800FD7720 /* Sources */,
 				8BFDDD471C0CB64800FD7720 /* Frameworks */,
 				8BFDDD481C0CB64800FD7720 /* Resources */,
+				8B28CB6C1C0CCB2300D810A0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -218,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B28CB731C0CCD9C00D810A0 /* DigitsKitResources.bundle in Resources */,
 				8BFDDD5C1C0CB64800FD7720 /* Main.storyboard in Resources */,
 				8BFDDD611C0CB64800FD7720 /* LaunchScreen.xib in Resources */,
 				8BFDDD5E1C0CB64800FD7720 /* Images.xcassets in Resources */,
@@ -232,6 +249,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B28CB6C1C0CCB2300D810A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run f15dd8cf83bcc78565ae12ce09cd6ccb99243405 a51101e458a1456dc91b263a8ccaaef65e385d15dcd0c8b986db013df0a24785";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BFDDD461C0CB64800FD7720 /* Sources */ = {
@@ -365,6 +398,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Phone Register/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +412,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Phone Register/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
